@@ -1,0 +1,30 @@
+{
+  "deploy": {
+    "packages": [
+      {
+        "files": [
+          "**/*",
+        ],
+        "exclude": [
+          "node_modules/**",
+          ".git/**",
+          ".vscode/**",
+          "**/node_modules/**",
+        ],
+        "deployOnSave": false
+      }
+    ],
+    "targets": [
+      {
+        "type": "sftp",
+        "name": "TencentyunServer",
+        "dir": "/home/source/docker_ci",
+        "host": "81.70.77.41",
+        "port": 22,
+        "user": "root",
+        "password": "dqscrumWCY123~!"
+        // "privateKey": "/Users/xia/.ssh/id_rsa"
+      }
+    ],
+  },
+}
