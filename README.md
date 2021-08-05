@@ -49,6 +49,18 @@ cd existing_git_repo
 git remote add origin https://gitee.com/blaunicorn/docker-cl.git
 git push -u origin master
 
+echo "# docker-ci" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/blaunicorn/docker-ci.git
+git push -u origin main
+
+git remote add origin https://github.com/blaunicorn/docker-ci.git
+git branch -M main
+git push -u origin main
+
 
 
 

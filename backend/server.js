@@ -31,13 +31,13 @@ app.use(function (req, res, next) {
 
 
 app.get('/api/top', async (req, res) => {
-  const allData  = await mongo.col("goods").find().toArray()
+  const allData = await mongo.col("goods").find().toArray()
   const newData = [...allData]
   newData.sort((a, b) => {
     return b.solded - a.solded
   })
   res.json({
-    code: 0, 
+    code: 0,
 
     data: newData.slice(0, 5)
   })

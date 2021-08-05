@@ -10,6 +10,7 @@
           ".git/**",
           ".vscode/**",
           "**/node_modules/**",
+          "**/.git/**",
         ],
         "deployOnSave": false
       }
@@ -17,7 +18,7 @@
     "targets": [
       {
         "type": "sftp",
-        "name": "TencentyunServer",
+        "name": "TencentyunServer_41",
         "dir": "/home/source/docker_ci",
         "host": "81.70.77.41",
         "port": 22,
