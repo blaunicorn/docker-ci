@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/su37josephxia/docker_ci#readme",
   "dependencies": {
+    "gitee-webhook-handler": "^0.1.2",
     "github-webhook-handler": "^0.7.1"
   }
 }

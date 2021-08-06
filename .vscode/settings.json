@@ -18,8 +18,8 @@
     "targets": [
       {
         "type": "sftp",
-        "name": "TencentyunServer_41",
-        "dir": "/home/source/docker_ci",
+        "name": "TencentyunServer-41",
+        "dir": "/home/source/docker-ci",
         "host": "81.70.77.41",
         "port": 22,
         "user": "root",
